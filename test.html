@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block 13 Workshop: If/Else</title>
+</head>
+<body>
+  <script src="index.js"></script>
+  <h1>Block 13 Workshop: If/Else</h1>
+
+  <h2>isTruthy Example</h2>
+  <button onclick="isTruthyExample()">Run isTruthy Example</button>
+  <ul>
+    <li><button onclick="console.log('isTruthy(`I am a string`)'); isTruthy('I am a string')">isTruthy("I am a string")</button></li>
+    <li><button onclick="console.log('isTruthy(false)'); isTruthy(false)">isTruthy(false)</button></li>
+    <li><button onclick="console.log('isTruthy(null)'); isTruthy(null)">isTruthy(null)</button></li>
+    <li><button onclick="console.log('isTruthy(undefined)'); isTruthy(undefined)">isTruthy(undefined)</button></li>
+    <li><button onclick="console.log('isTruthy(0)'); isTruthy(0)">isTruthy(0)</button></li>
+    <li><button onclick="console.log('isTruthy(``)'); isTruthy('')">isTruthy("")</button></li>
+  </ul>
+
+  <h2>Number Line Example</h2>
+  <button onclick="numberLineExample()">Run Number Line Example</button>
+  <ul>
+    <li><button onclick="console.log('numberLine(50,51)'); numberLine(50,51)">numberLine(50,51)</button></li>
+    <li><button onclick="console.log('numberLine(99,-2)'); numberLine(99,-2)">numberLine(99,-2)</button></li>
+    <li><button onclick="console.log('numberLine(0,101)'); numberLine(0,101)">numberLine(0,101)</button></li>
+    <li><button onclick="console.log('numberLine(500,-500)'); numberLine(500,-500)">numberLine(500,-500)</button></li>
+    <li><button onclick="console.log('numberLine(-1000,0)'); numberLine(-1000,0)">numberLine(-1000,0)</button></li>
+    <li><button onclick="console.log('numberLine(-5,0)'); numberLine(-5,0)">numberLine(-5,0)</button></li>
+  </ul>
+      
+  </ul>
+
+  <h2>Greater Than or Equal To 5 Example</h2>
+  <button onclick="greaterThanOrEqualToFiveExample()">Run Greater Than or Equal To 5 Example</button>
+  <ul>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(5,6)'); greaterThanOrEqualToFive(5,6)">greaterThanOrEqualToFive(5,6)</button></li>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(10,11)'); greaterThanOrEqualToFive(10,11)">greaterThanOrEqualToFive(10,11)</button></li>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(0,0)'); greaterThanOrEqualToFive(0,0)">greaterThanOrEqualToFive(0,0)</button></li>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(1000,-1000)'); greaterThanOrEqualToFive(1000,-1000)">greaterThanOrEqualToFive(1000,-1000)</button></li>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(6,4)'); greaterThanOrEqualToFive(6,4)">greaterThanOrEqualToFive(6,4)</button></li>
+    <li><button onclick="console.log('greaterThanOrEqualToFive(5,5)'); greaterThanOrEqualToFive(5,5)">greaterThanOrEqualToFive(5,5)</button></li>
+</ul>
+
+  </ul>      
+  
+  <h2>Pair and Compare Example</h2>
+  <button onclick="pairAndCompareExample()">Run Pair and Compare Example</button>
+  <ul>
+    <li><button onclick="console.log(`pairAndCompare('cat', 'cat', 6, '6')`); pairAndCompare('cat', 'cat', 6, '6')">pairAndCompare("cat", "cat", 6, "6")</button></li>
+    <li><button onclick="console.log(`pairAndCompare('five', 5, 'dog', 'dawg')`); pairAndCompare('five', 5, 'dog', 'dawg')">pairAndCompare("five", 5, "dog", "dawg")</button></li>
+    <li><button onclick="console.log(`pairAndCompare(0, false, 'horse', 'horse')`); pairAndCompare(0, false, 'horse', 'horse')">pairAndCompare(0, false, "horse", "horse")</button></li>
+    <li><button onclick="console.log(`pairAndCompare('eight', 'eight', 'ate', 'ate')`); pairAndCompare('eight', 'eight', 'ate', 'ate')">pairAndCompare("eight", "eight", "ate", "ate")</button></li>
+    <li><button onclick="console.log(`pairAndCompare(11, 'eleven', 'four', 'for')`); pairAndCompare(11, 'eleven', 'four', 'for')">pairAndCompare(11, "eleven", "four", "for")</button></li>
+    <li><button onclick="console.log(`pairAndCompare('cake', 'cake', 'pie', 'pie')`); pairAndCompare('cake', 'cake', 'pie', 'pie')">pairAndCompare("cake", "cake", "pie", "pie")</button></li>
+  </ul>      
+  <script>
+// isTruthy example
+
+   function isTruthyExample() {
+        console.log('isTruthy(`I am a string`)'); isTruthy('I am a string');
+        console.log('isTruthy(false)'); isTruthy(false);
+        console.log('isTruthy(null)'); isTruthy(null);
+        console.log('isTruthy(undefined)'); isTruthy(undefined);
+        console.log('isTruthy(0)'); isTruthy(0);
+        console.log('isTruthy(``)'); isTruthy('');
+    }
+    
+// Number Line example
+    function numberLineExample() {
+        console.log('numberLine(50,51)'); numberLine(50,51);
+        console.log('numberLine(99,-2)'); numberLine(99,-2);
+        console.log('numberLine(0,101)'); numberLine(0,101);
+        console.log('numberLine(500,-500)'); numberLine(500,-500);
+        console.log('numberLine(-1000,0)'); numberLine(-1000,0);
+        console.log('numberLine(-5,0)'); numberLine(-5,0);
+    }
+    
+// Greater Than or Equal To 5 example
+    function greaterThanOrEqualToFiveExample() {
+        console.log('greaterThanOrEqualToFive(5,6)'); greaterThanOrEqualToFive(5,6)
+        console.log('greaterThanOrEqualToFive(10,11)'); greaterThanOrEqualToFive(10,11)
+        console.log('greaterThanOrEqualToFive(0,0)'); greaterThanOrEqualToFive(0,0)
+        console.log('greaterThanOrEqualToFive(1000,-1000)'); greaterThanOrEqualToFive(1000,-1000)
+        console.log('greaterThanOrEqualToFive(6,4)'); greaterThanOrEqualToFive(6,4)
+        console.log('greaterThanOrEqualToFive(5,5)'); greaterThanOrEqualToFive(5,5)
+    }
+    
+// Pair and Compare example
+    function pairAndCompareExample() {
+        console.log('pairAndCompare("cat", "cat", 6, "6")'); pairAndCompare("cat", "cat", 6, "6");
+        console.log('pairAndCompare("five", 5, "dog", "dawg")'); pairAndCompare("five", 5, "dog", "dawg");
+        console.log('pairAndCompare(0, false, "horse", "horse")'); pairAndCompare(0, false, "horse", "horse");
+        console.log('pairAndCompare("eight", "eight", "ate", "ate")'); pairAndCompare("eight", "eight", "ate", "ate");
+        console.log('pairAndCompare(11, "eleven", "four", "for")'); pairAndCompare(11, "eleven", "four", "for");
+        console.log('pairAndCompare("cake", "cake", "pie", "pie")'); pairAndCompare("cake", "cake", "pie", "pie"); 
+    }
+  </script>
+</body>
+</html>
